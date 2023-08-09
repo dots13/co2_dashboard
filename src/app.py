@@ -1,5 +1,5 @@
 
-import pandas as pd
+#import pandas as pd
 import numpy as np
 from dash import Dash, dcc, html, Input, Output
 from dash import jupyter_dash
@@ -47,7 +47,7 @@ rel_path = "data/owid-world-data.csv"  # the target file
 rel_to_cwd_path = os.path.join(script_dir, rel_path)  # the cwd-relative path of the target file
 
 # Read csv file
-df = pd.read_csv(rel_to_cwd_path)
+#df = pd.read_csv(rel_to_cwd_path)
 
 
 # Path to model
@@ -60,7 +60,7 @@ loaded = joblib.load(rel_to_cwd_path_model)
 colors = {'background': '#111111',
           'text': '#7FDBFF'}
 
-previous_co2 = df[df.year > 2000][['year', 'co2']]
+#previous_co2 = df[df.year > 2000][['year', 'co2']]
 
 
 app.layout = html.Div(style={'backgroundColor': colors['background']}, children=[
@@ -105,13 +105,13 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
 )
 def generate_chart(value):
     forecast = loaded.forecast(value)
-    forecast = np.insert(forecast, 0, previous_co2.co2.values[-1])
+    #forecast = np.insert(forecast, 0, previous_co2.co2.values[-1])
     year_list = [i for i in range(2021, 2022 + value)]
     
 
     fig = go.Figure()
     fig.add_trace(go.Scatter(x=year_list, y=forecast, mode='lines+markers', name='forecast'))
-    fig.add_trace(go.Scatter(x=previous_co2.year, y=previous_co2.co2, mode='lines+markers', name='previous'))
+    #fig.add_trace(go.Scatter(x=previous_co2.year, y=previous_co2.co2, mode='lines+markers', name='previous'))
     fig.update_layout(
         autosize=True,
         height=500,

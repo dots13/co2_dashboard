@@ -1,7 +1,6 @@
 dash==2.11.1
 joblib
 numpy
-pandas==2.0.3
 plotly==5.15.0
 statsmodels
 gunicorn
