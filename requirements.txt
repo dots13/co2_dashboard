@@ -3,4 +3,4 @@ plotly==5.15.0
 gunicorn
 pandas
 dash-tools
-statsmodels
+statsmodels==0.8.0
