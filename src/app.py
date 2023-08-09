@@ -4,7 +4,7 @@ from dash import jupyter_dash
 import os
 import plotly.graph_objects as go
 import pickle
-
+import pandas as pd
 jupyter_dash.default_mode = "external"
 
 
@@ -44,7 +44,7 @@ rel_path = "data/owid-world-data.csv"  # the target file
 rel_to_cwd_path = os.path.join(script_dir, rel_path)  # the cwd-relative path of the target file
 
 # Read csv file
-#df = pd.read_csv(rel_to_cwd_path)
+df = pd.read_csv(rel_to_cwd_path)
 
 
 # Path to model
