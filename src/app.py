@@ -6,6 +6,8 @@ from dash import jupyter_dash
 import os
 import pickle
 import plotly.graph_objects as go
+import statsmodels
+
 
 jupyter_dash.default_mode = "external"
 
