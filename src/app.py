@@ -4,10 +4,10 @@ import numpy as np
 from dash import Dash, dcc, html, Input, Output
 from dash import jupyter_dash
 import os
-import pickle
+import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
-import statsmodels
 
+from statsmodels.tsa.arima.model import ARIMAResults
 
 jupyter_dash.default_mode = "external"
 
@@ -56,7 +56,7 @@ rel_path_model = "models/model_co2.pkl"  # the target file
 rel_to_cwd_path_model = os.path.join(script_dir, rel_path_model)  # the cwd-relative path of the target file
 
 # Load model
-loaded = pickle.load(open(rel_to_cwd_path_model, 'rb'))
+loaded = ARIMAResults.load(rel_to_cwd_path_model)
 
 colors = {'background': '#111111',
           'text': '#7FDBFF'}

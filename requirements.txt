@@ -1,7 +1,8 @@
-dash==2.11.1
-numpy==1.25.2
-pandas==2.0.3
-plotly==5.15.0
-statsmodels==0.14.0
+dash
+dash_bootstrap_components
+numpy
+pandas
+plotly
+statsmodels
 gunicorn
 dash-tools
