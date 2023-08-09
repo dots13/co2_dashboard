@@ -5,10 +5,7 @@ from dash import Dash, dcc, html, Input, Output
 from dash import jupyter_dash
 import os
 import pickle
-import dash_bootstrap_components as dbc
 import plotly.graph_objects as go
-
-from statsmodels.tsa.arima.model import ARIMAResults
 
 jupyter_dash.default_mode = "external"
 
