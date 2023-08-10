@@ -4,10 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82c70656-8072-40fc-8fc5-39bfc80496f8" name="Changes" comment="add new requirements.txt and model">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-    </list>
+    <list default="true" id="82c70656-8072-40fc-8fc5-39bfc80496f8" name="Changes" comment="delete pywin from requirements.txt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691676568518</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="delete pywin from requirements.txt">
+      <created>1691676735748</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1691676735748</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -134,6 +138,7 @@
     <MESSAGE value="specify new requirements.txt" />
     <MESSAGE value="&#10;change model and version packaging" />
     <MESSAGE value="add new requirements.txt and model" />
-    <option name="LAST_COMMIT_MESSAGE" value="add new requirements.txt and model" />
+    <MESSAGE value="delete pywin from requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="delete pywin from requirements.txt" />
   </component>
 </project>
