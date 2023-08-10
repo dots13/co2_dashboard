@@ -3,8 +3,9 @@ from dash import Dash, dcc, html, Input, Output
 from dash import jupyter_dash
 import os
 import plotly.graph_objects as go
-#import pickle
+import pickle
 import pandas as pd
+import numpy as np
 
 jupyter_dash.default_mode = "external"
 
@@ -53,12 +54,12 @@ rel_path_model = "models/model_co2.pkl"  # the target file
 rel_to_cwd_path_model = os.path.join(script_dir, rel_path_model)  # the cwd-relative path of the target file
 
 # Load model
-#loaded = pickle.load(open(rel_to_cwd_path_model, "rb"))
+loaded = pickle.load(open(rel_to_cwd_path_model, "rb"))
 
 colors = {'background': '#111111',
           'text': '#7FDBFF'}
 
-#previous_co2 = df[df.year > 2000][['year', 'co2']]
+previous_co2 = df[df.year > 2000][['year', 'co2']]
 
 
 app.layout = html.Div(style={'backgroundColor': colors['background']}, children=[
@@ -102,15 +103,15 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
     Input(component_id='slider', component_property='value'),
 )
 def generate_chart(value):
-    #forecast = loaded.forecast(value)
-    #forecast = np.insert(forecast, 0, previous_co2.co2.values[-1])
+    forecast = loaded.forecast(value)
+    forecast = np.insert(forecast, 0, previous_co2.co2.values[-1])
     year_list = [i for i in range(2021, 2022 + value)]
     
 
     fig = go.Figure()
-    #fig.add_trace(go.Scatter(x=year_list, y=forecast, mode='lines+markers', name='forecast'))
+    fig.add_trace(go.Scatter(x=year_list, y=forecast, mode='lines+markers', name='forecast'))
 
-    #fig.add_trace(go.Scatter(x=previous_co2.year, y=previous_co2.co2, mode='lines+markers', name='previous'))
+    fig.add_trace(go.Scatter(x=previous_co2.year, y=previous_co2.co2, mode='lines+markers', name='previous'))
     fig.update_layout(
         autosize=True,
         height=500,
