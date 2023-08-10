@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82c70656-8072-40fc-8fc5-39bfc80496f8" name="Changes" comment="&#10;change model and version packaging">
-      <change beforePath="$PROJECT_DIR$/src/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.py" afterDir="false" />
+    <list default="true" id="82c70656-8072-40fc-8fc5-39bfc80496f8" name="Changes" comment="add new requirements.txt and model">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691675919247</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="add new requirements.txt and model">
+      <created>1691676568518</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1691676568518</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -125,6 +133,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="specify new requirements.txt" />
     <MESSAGE value="&#10;change model and version packaging" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;change model and version packaging" />
+    <MESSAGE value="add new requirements.txt and model" />
+    <option name="LAST_COMMIT_MESSAGE" value="add new requirements.txt and model" />
   </component>
 </project>
