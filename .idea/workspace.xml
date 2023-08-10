@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82c70656-8072-40fc-8fc5-39bfc80496f8" name="Changes" comment="change start command">
+    <list default="true" id="82c70656-8072-40fc-8fc5-39bfc80496f8" name="Changes" comment="add gunicorn">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -129,7 +129,14 @@
       <option name="project" value="LOCAL" />
       <updated>1691677992210</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="add gunicorn">
+      <created>1691678791469</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1691678791469</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,6 +156,7 @@
     <MESSAGE value="add new requirements.txt and model" />
     <MESSAGE value="delete pywin from requirements.txt" />
     <MESSAGE value="change start command" />
-    <option name="LAST_COMMIT_MESSAGE" value="change start command" />
+    <MESSAGE value="add gunicorn" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gunicorn" />
   </component>
 </project>
